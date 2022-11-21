@@ -1,0 +1,207 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  box-shadow: 0px -8px 15px 12px rgba(66, 66, 66, 0.6);
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  height: 72px;
+}
+
+.logo {
+  padding-bottom: 0px;
+  margin-top: 25px;
+}
+
+.container {
+  max-width: 1124px;
+  margin: 0 auto; /*выравниваем контейнер по центру*/
+  padding-top: 0px;
+}
+
+.button {
+  border: 1px solid #c5c1c1;
+  color: black;
+  padding: 15px 20px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 12px;
+  width: min-content;
+  margin-right: 0vw;
+  border-radius: 5px;
+  margin-left: 0vw;
+  margin-bottom: 70px;
+}
+
+.button:hover {
+  box-shadow: 5px 5px 1px rgb(78, 75, 75);
+}
+
+.button:active {
+  transform: translateY(3px) translateX(3px);
+  box-shadow: none;
+}
+
+.basket {
+  background: cover;
+  padding: 0px 15px 55px;
+  width: min-content;
+  margin-left: 0px;
+}
+
+.basket:active {
+  transform: translateY(3px) translateX(3px);
+}
+
+.container-search-text {
+  padding-top: 100px;
+}
+
+.line-one {
+  border-bottom: 1px solid #aca8a8;
+  margin-top: 5px;
+}
+
+form {
+  position: relative;
+  width: 300px;
+  margin-top: 30px;
+  padding-left: 0px;
+}
+input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 0px solid white;
+  border-radius: 5px;
+  outline: none;
+  background: white;
+  color: #9e9c9c;
+}
+
+.h3-restaurants-name {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  padding-top: 40px;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 575px) {
+  .card-img {
+    margin-bottom: 0px;
+    max-width: 750px;
+    transition: all 0.5s;
+    width: 100%;
+  }
+}
+
+.card {
+  
+  border: 1px solid #d8d8d8;
+  padding: auto;
+  margin: auto;
+  border-radius: 3px;
+  transition: all 0.5s;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-5px) translateX(-5px);
+  transition-duration: 0.4s;
+  border: 1px solid #c5c1c1;
+  padding: 2px;
+}
+
+.card:active {
+  transform: translateY(3px) translateX(3px);
+  box-shadow: none;
+}
+
+.card-img {
+  width: 100%;
+}
+
+footer {
+  background-color: #262626;
+}
+
+.logo-footer {
+  margin-left: -15px;
+}
+
+.footer-line {
+  border: 1px solid #6d6a6a;
+  margin: 25px auto;
+  width: 100%;
+}
+
+.footer-menu-lang {
+  margin-top: 5%;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+  padding-top: 20px;
+}
+
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.footer-menu {
+  margin-top: 0;
+}
+
+/*a {
+  text-decoration: none; 
+  color: rgb(73, 72, 72);
+}*/
+
+.lang-select {
+  background-color: #3b3b3b;
+  border: 1px solid #111010;
+  height: 40px;
+  width: 227px;
+  text-align: center;
+}
+
+.lang-select:hover {
+  border: 2px solid #101111;
+  background-color: #3b3b3b;
+}
+
+select {
+  background-image: url(2022-11-13_11-05-34.png);
+  background-repeat: no-repeat;
+}
+
+.logo-footer-downe {
+  display: inline-flex;
+  margin: auto;
+}
+
+.logo-footer-downe-one {
+  width: 150px;
+}
+.logo-footer-downe-two {
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.menu {
+  color: black;
+}
+
+a {
+  text-decoration: none; /* Убираем подчёркивание ссылок*/
+  color: #757575;
+}
