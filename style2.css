@@ -1,0 +1,353 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  box-shadow: 0px -8px 15px 12px rgba(66, 66, 66, 0.6);
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 999;
+  height: 72px;
+}
+
+.logo {
+  padding-bottom: 0px;
+  margin-top: 25px;
+}
+
+.container {
+  max-width: 1124px;
+  margin: 0 auto; /*выравниваем контейнер по центру*/
+  padding-top: 0px;
+}
+
+/*.nav-container > .row {
+  padding: 0;
+}*/
+
+/*.row {
+  align-items: center;
+}*/
+
+.button {
+  border: 1px solid #c5c1c1;
+  color: black;
+  padding: 15px 20px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 12px;
+  width: min-content;
+  margin-right: 0vw;
+  border-radius: 5px;
+  margin-left: 0vw;
+  margin-bottom: 70px;
+}
+
+.button:hover {
+  box-shadow: 5px 5px 1px rgb(78, 75, 75);
+}
+
+.button:active {
+  transform: translateY(3px) translateX(3px);
+  box-shadow: none;
+}
+
+.basket {
+  background: cover;
+  padding: 0px 15px 55px;
+  width: min-content;
+  margin-left: 0px;
+}
+
+.basket:active {
+  transform: translateY(3px) translateX(3px);
+}
+
+.container-baner {
+  background-image: url(1.png);
+  background-repeat: no-repeat;
+  height: 450px;
+  background-size: 100%;
+  /*display: flex;
+  align-self: center;
+  justify-content: center;*/
+  /*background-color: aqua;*/
+}
+
+h1 {
+  font-size: 34px;
+  line-height: 42px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 54px;
+  text-align: center;
+}
+
+.banner-time {
+  background-color: black;
+  color: white;
+  float: right;
+  text-align: center;
+  font-size: 12px;
+  line-height: 32px;
+  border-radius: 16px;
+  width: 94px;
+  height: 32px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 500px) {
+  .food-name .banner-time h1 {
+    text-align: left;
+  }
+}
+
+.food-name {
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  .container-card {
+    position: relative; /*перемещаем блок вниз при самом маленьком размере экрана*/
+    top: 140px;
+    box-shadow: 0px 5px 5px 0px rgba(175, 175, 175, 0.22);
+    text-align: left;
+  }
+}
+.container-card {
+  margin: 155px 0px;
+  background-color: white;
+  text-align: left;
+  padding: 38px 40px 38px 0px;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+  margin-right: 50px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.menu {
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+  color: black;
+  background-color: none;
+}
+
+.menu :hover {
+  color: #306674;
+  padding: 4px; /* Значение полей */
+}
+
+.menu li {
+  display: inline; /* Отображать как строчный элемент */
+  margin-left: 0%;
+}
+
+@media screen and (max-width: 575px) {
+  .menu {
+    display: none;
+  }
+}
+
+.line {
+  border-bottom: 1px solid #d8d8d8;
+}
+
+a {
+  text-decoration: none; /* Убираем подчёркивание ссылок*/
+  color: #757575;
+}
+
+.menu-title {
+  padding-top: 35px;
+}
+
+@media screen and (max-width: 575px) {
+  .menu-title {
+    padding-top: 70px;
+  }
+}
+
+.h1-menu-title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  padding-bottom: 0px;
+}
+
+.category-underline {
+  width: 100%;
+  color: #757575;
+  border: 1px solid #757575;
+  opacity: 40%;
+  margin-top: -2%;
+  margin-bottom: 2%;
+}
+
+@media screen and (max-width: 575px) {
+  .category-underline {
+    width: 10%;
+    margin-top: -5%;
+    margin-bottom: 5%;
+  }
+}
+
+.dish img {
+  float: right; /*Картинка справа от карточки*/
+  border-radius: 5px;
+}
+
+.dish {
+  border: 1px solid #d8d8d8;
+  padding: 0;
+  margin: 0 0 20px 0;
+
+  border-radius: 3px;
+  transition: all 0.5s;
+  background-color: white;
+}
+
+.dish-list {
+  list-style: none;
+  padding: 16px 0 -2% 10px;
+  margin: 0;
+}
+
+.dish-header {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0 0 4px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-size: 15px;
+  line-height: 21px;
+  white-space: nowrap; /*Запрет переноса текста на новую строку*/
+  overflow: hidden; /*Спрятать не поместившееся в контейнер*/
+  text-overflow: ellipsis; /*Текст обрезается по размеру области. Работает с overflow: hidden;*/
+  padding-top: 83px;
+}
+
+.dish:first-of-type .price {
+  padding-top: 40px;
+} /* стиль первого элемента определённого типа в группе братских элементов (имеющих одного родителя).*/
+
+.addition {
+  font-size: 13px;
+  line-height: 21px;
+  color: #626262;
+}
+
+@media screen and (max-width: 575px) {
+  .dish {
+    margin-bottom: 0px;
+    max-width: 750px;
+    transition: all 0.5s;
+  }
+}
+
+.dish:hover {
+  transform: translateY(-5px) translateX(-5px);
+  transition-duration: 0.4s;
+  border: 1px solid #c5c1c1;
+  padding: 2px;
+}
+
+.dish:active {
+  transform: translateY(3px) translateX(3px);
+  box-shadow: none;
+}
+
+footer {
+  background-color: #262626;
+}
+
+.logo-footer {
+  margin-left: -15px;
+}
+
+.footer-line {
+  border: 1px solid #6d6a6a;
+  margin: 25px auto;
+  width: 100%;
+}
+
+.footer-menu-lang {
+  margin-top: 5%;
+}
+
+.f {
+  margin-top: 5%;
+  margin-left: 0%;
+  padding-left: 0%;
+}
+
+li {
+  list-style-type: none; /* Убираем маркеры */
+  padding-top: 20px;
+}
+
+ul {
+  margin-left: 0; /* Отступ слева в браузере IE и Opera */
+  padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+.footer-menu {
+  margin-top: 0;
+}
+
+/*a {
+  text-decoration: none; 
+  color: rgb(73, 72, 72);
+}*/
+
+.lang-select {
+  background-color: #3b3b3b;
+  border: 1px solid #111010;
+  height: 40px;
+  width: 227px;
+  text-align: center;
+}
+
+.lang-select:hover {
+  border: 2px solid #101111;
+  background-color: #3b3b3b;
+}
+
+select {
+  background-image: url(2022-11-13_11-05-34.png);
+  background-repeat: no-repeat;
+}
+
+.logo-footer-downe {
+  display: inline-flex;
+  margin: auto;
+}
+
+.logo-footer-downe-one {
+  width: 150px;
+}
+.logo-footer-downe-two {
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 30px;
+}
+
+.menu {
+  color: black;
+}
